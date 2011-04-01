@@ -1,0 +1,15 @@
+# Sunspot::Query
+
+sunspot-query is a library for constructing Solr queries using an
+object-oriented API. It is a (conceptual) extraction from the
+[Sunspot](http://github.com/outoftime/sunspot) library, but unlike Sunspot,
+it makes no assumptions about how you want to use Solr.
+
+The planned 2.0 release of Sunspot will be built on top of this library.
+
+This is very much a work in progress. Contributions are welcome!
+
+## License
+
+Sunspot::Query can be freely distributed under the MIT License. See the LICENSE
+file in this repository for details.
