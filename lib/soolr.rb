@@ -10,11 +10,13 @@ module Soolr
 
   autoload :Field, 'soolr/field'
 
+  autoload :AllOf, 'soolr/all_of'
+  autoload :AnyOf, 'soolr/any_of'
+  autoload :Between, 'soolr/between'
   autoload :Condition, 'soolr/condition'
   autoload :EqualTo, 'soolr/equal_to'
   autoload :LessThan, 'soolr/less_than'
   autoload :LessThanOrEqualTo, 'soolr/less_than_or_equal_to'
   autoload :GreaterThan, 'soolr/greater_than'
   autoload :GreaterThanOrEqualTo, 'soolr/greater_than_or_equal_to'
-  autoload :Between, 'soolr/between'
 end
