@@ -12,7 +12,7 @@ module Soolr
     private
 
     def to_boolean_expression
-      range = "#{escape(@field.serialize(@value.first))}..#{escape(@field.serialize(@value.last))}"
+      range = "#{escape(@field.serialize(@value.first))} TO #{escape(@field.serialize(@value.last))}"
       range = @include_start ? "[#{range}" : "(#{range}"
       range << (@include_end ? ']' : ')')
     end
