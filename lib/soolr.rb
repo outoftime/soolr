@@ -15,6 +15,7 @@ module Soolr
   autoload :Between, 'soolr/between'
   autoload :Condition, 'soolr/condition'
   autoload :EqualTo, 'soolr/equal_to'
+  autoload :Exists, 'soolr/exists'
   autoload :LessThan, 'soolr/less_than'
   autoload :LessThanOrEqualTo, 'soolr/less_than_or_equal_to'
   autoload :GreaterThan, 'soolr/greater_than'
