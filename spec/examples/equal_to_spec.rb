@@ -1,9 +1,9 @@
 require File.expand_path('../spec_helper', __FILE__)
 
-describe Sunspot::Query::EqualTo do
-  let(:string) { Sunspot::Query::StringType }
-  let(:integer) { Sunspot::Query::IntegerType }
-  let(:time) { Sunspot::Query::TimeType }
+describe Soolr::EqualTo do
+  let(:string) { Soolr::StringType }
+  let(:integer) { Soolr::IntegerType }
+  let(:time) { Soolr::TimeType }
 
   it 'should return expected boolean query' do
     equal_to(:title, string, 'Test').to_boolean_query.should ==
@@ -50,6 +50,6 @@ describe Sunspot::Query::EqualTo do
   private
 
   def equal_to(name, type, value)
-    Sunspot::Query::EqualTo.new(Sunspot::Query::Field.new(name, type), value)
+    Soolr::EqualTo.new(Soolr::Field.new(name, type), value)
   end
 end

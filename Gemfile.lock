@@ -1,11 +1,11 @@
 PATH
   remote: .
   specs:
-    sunspot-query (1.0.0.alpha.1)
+    soolr (2.0.pre.1)
 
 GEM
+  remote: http://rubygems.org/
   specs:
-    ZenTest (4.5.0)
     diff-lcs (1.1.2)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
@@ -20,6 +20,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ZenTest
   rspec (~> 2.0)
-  sunspot-query!
+  soolr!
