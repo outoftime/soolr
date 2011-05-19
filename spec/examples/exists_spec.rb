@@ -6,6 +6,13 @@ describe Soolr::Exists do
       'name:[* TO *]'
   end
 
+  context 'when inverted' do
+    it 'should create proper inverted boolean query' do
+      exists(:name, Soolr::StringType).inverse.to_boolean_query.should ==
+        '-name:[* TO *]'
+    end
+  end
+
   private
 
   def exists(name, type)

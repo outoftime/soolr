@@ -4,6 +4,10 @@ module Soolr
       super(field, nil, inverted)
     end
 
+    def inverse
+      Exists.new(@field, !@inverted)
+    end
+
     private
 
     def to_boolean_expression
