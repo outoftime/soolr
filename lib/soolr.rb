@@ -16,4 +16,5 @@ module Soolr
   autoload :LessThanOrEqualTo, 'soolr/less_than_or_equal_to'
   autoload :GreaterThan, 'soolr/greater_than'
   autoload :GreaterThanOrEqualTo, 'soolr/greater_than_or_equal_to'
+  autoload :Between, 'soolr/between'
 end
