@@ -1,6 +1,6 @@
 module Soolr
   class Condition
-    def initialize(field, value)
+    def initialize(field, value, inverted = false)
       @field, @value, @inverted = field, value, inverted
     end
 
@@ -15,8 +15,12 @@ module Soolr
     end
 
     def ==(other)
-      !other.respond_to?(:to_boolean_query) ||
+      other.respond_to?(:to_boolean_query) &&
         to_boolean_query == other.to_boolean_query
+    end
+
+    def inverse
+      self.class.new(@field, @value, !@inverted)
     end
 
     private

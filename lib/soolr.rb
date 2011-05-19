@@ -11,7 +11,6 @@ module Soolr
   autoload :Field, 'soolr/field'
 
   autoload :Condition, 'soolr/condition'
-  autoload :Not, 'soolr/not'
   autoload :EqualTo, 'soolr/equal_to'
   autoload :LessThan, 'soolr/less_than'
 end
