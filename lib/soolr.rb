@@ -10,6 +10,8 @@ module Soolr
 
   autoload :Field, 'soolr/field'
 
+  autoload :Dismax, 'soolr/dismax'
+
   autoload :AllOf, 'soolr/all_of'
   autoload :AnyOf, 'soolr/any_of'
   autoload :Between, 'soolr/between'
